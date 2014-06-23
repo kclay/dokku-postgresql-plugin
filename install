@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build MongoDB image
-db_image="jeffutter/postgresql"
+db_image="jeffutter/postgresql-9.3"
 docker pull "$db_image"
 
 [[ $(lsb_release -cs) = 'trusty' ]] && psql_version="9.3" || psql_version="9.1"
